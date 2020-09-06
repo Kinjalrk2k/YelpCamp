@@ -12,3 +12,8 @@ This version is a part of Section 28: YelpCamp Basics
 - Layout and Basic Styling
     - Header and Footer partials
     - Adding Bootstrap!
+- Creating new Campgrounds
+    - Set up a POST route
+    - Add in Body Parser
+    - Setup Route to show the form
+    - Basic unstyled form
