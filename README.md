@@ -21,3 +21,6 @@ This version is a part of Section 28: YelpCamp Basics
 - Style the campgrounds page
     - Better header/title
     - Grid display of campgrounds
+- Style the navbar and Form
+    - Add navbar to all templates
+    - Style the new campground form
