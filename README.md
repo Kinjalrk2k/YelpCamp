@@ -11,3 +11,6 @@ This version is a part of Section 30: Data Persistence
 - Add a seeds file
     - Add a seed.js file
     - Run seeds file every time the server starts
+- Add the Comment Model
+    - Make our errs go away!
+    - Display comments on campgrounds show page
