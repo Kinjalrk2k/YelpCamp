@@ -14,3 +14,7 @@ This version is a part of Section 30: Data Persistence
 - Add the Comment Model
     - Make our errs go away!
     - Display comments on campgrounds show page
+- Comment New/Create
+    - Discuss Nested routes
+    - Add comments new and create routes
+    - Add the new comment form
