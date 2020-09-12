@@ -8,3 +8,6 @@ This version is a part of Section 33: YelpCamp Comments
     - Discuss Nested routes
     - Add comments new and create routes
     - Add the new comment form
+- Style Show Page
+    - Add Sidebar to show Page
+    - Display comments nicely
