@@ -9,7 +9,6 @@ var express = require("express"),
   User = require("./models/user"),
   seedDB = require("./seed");
 
-
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
@@ -24,6 +23,20 @@ mongoose
   .catch((error) => console.log(error.message));
 
 seedDB();
+
+// Passport Configurations
+app.use(
+  require("express-session")({
+    secret: "YelpCamp is Ad-free!",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new localStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 // ROUTES
 app.get("/", function (req, res) {
@@ -104,6 +117,26 @@ app.post("/campgrounds/:id/comments", function (req, res) {
         }
       });
     }
+  });
+});
+
+// ====================================
+//  AUTHENTICATION ROUTES
+// ====================================
+app.get("/register", function (req, res) {
+  res.render("register");
+});
+
+app.post("/register", function (req, res) {
+  var newUser = new User({ username: req.body.username });
+  User.register(newUser, req.body.password, function (err, user) {
+    if (err) {
+      console.log(err);
+      return res.render("register");
+    }
+    passport.authenticate("local")(req, res, function () {
+      res.redirect("/campgrounds");
+    });
   });
 });
 

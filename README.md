@@ -7,3 +7,7 @@ This version is a part of Section 35: YelpCamp Adding Authentication
 - Add User Model
     - Install all packages needed for auth
     - Define User model
+- Register
+    - Configure Passport
+    - Add register routes
+    - Add register template
