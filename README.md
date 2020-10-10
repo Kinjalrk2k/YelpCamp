@@ -11,3 +11,6 @@ This version is a part of Section 35: YelpCamp Adding Authentication
     - Configure Passport
     - Add register routes
     - Add register template
+- Login 
+    - Add login route
+    - Add login template

@@ -140,6 +140,19 @@ app.post("/register", function (req, res) {
   });
 });
 
+app.get("/login", function (req, res) {
+  res.render("login");
+});
+
+app.post(
+  "/login",
+  passport.authenticate("local", {
+    successRedirect: "/campgrounds",
+    failureRedirect: "/login",
+  }),
+  function (req, res) {}
+);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, function () {
   console.log(`The YelpCamp Server is running on port ${PORT}`);
