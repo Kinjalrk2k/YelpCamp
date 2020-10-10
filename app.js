@@ -38,6 +38,12 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+// user defined middleware - this makes req.user variable available to all the routes and templates
+app.use(function (req, res, next) {
+  res.locals.currentUser = req.user;
+  next();
+});
+
 // ROUTES
 app.get("/", function (req, res) {
   res.render("landing");
@@ -49,7 +55,7 @@ app.get("/campgrounds", function (req, res) {
     if (err) {
       console.log(err);
     } else {
-      res.render("campgrounds/index", { campgrounds: allCampgrounds });
+      res.render("campgrounds/index", { campgrounds: allCampgrounds, currentUser: req.user });
     }
   });
 });

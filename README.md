@@ -19,3 +19,5 @@ This version is a part of Section 35: YelpCamp Adding Authentication
     - Prevent user from adding comment if not signed in 
     - Add links to the navbar
     - Show/hide auth links correctly
+- Show/Hide Links
+    - Show/Hide Navbar links correctly
