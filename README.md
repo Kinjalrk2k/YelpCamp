@@ -20,4 +20,4 @@ This version is a part of Section 35: YelpCamp Adding Authentication
     - Add links to the navbar
     - Show/hide auth links correctly
 - Show/Hide Links
-    - Show/Hide Navbar links correctly
+    - Show/Hide Navbar links correctly      
