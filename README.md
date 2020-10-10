@@ -11,3 +11,6 @@ This version is a part of Section 33: YelpCamp Comments
 - Style Show Page
     - Add Sidebar to show Page
     - Display comments nicely
+- Finish Styling Show Page
+    - Add public directory
+    - Add custom stylesheet
