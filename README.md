@@ -4,7 +4,10 @@ Colt Steele's YelpCamp project!
 This version is a part of Section 35: YelpCamp Adding Authentication
 
 ## Objectives for this section
-- Users+ Comments
-    - Associate Users and Comments
-    - Save author's name to comment automatically
+- Editing Campgroungs
+    - Add Method-Override
+    - Add Edit Route for Campgrounds
+    - Add link to edit page
+    - Add Update Route
+    - Fix $set problem
          

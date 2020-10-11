@@ -24,11 +24,12 @@
           <p>
             <em>Submitted by: <strong><%= campground.author.username %></strong> </em>
           </p>
+          <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit</a>
         </div>
       </div>
       <div class="card bg-light my-3 p-3">
         <div class="text-right">
-          <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
+          <a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
         </div>
         <hr>
         <% campground.comments.forEach(comment => { %>
