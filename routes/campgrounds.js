@@ -77,6 +77,21 @@ router.put("/:id", function (req, res) {
   // redirect the show page
 });
 
+// DESTROY
+router.delete("/:id", function (req, res) {
+  Campground.findByIdAndRemove(req.params.id, function (err, campgroundRemoved) {
+    if (err) {
+      console.log(err);
+    }
+    Comment.deleteMany({ _id: { $in: campgroundRemoved.comments } }, function (err) {
+      if (err) {
+        console.log(err);
+      }
+      res.redirect("/campgrounds");
+    });
+  });
+});
+
 // middleware
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {

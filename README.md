@@ -9,5 +9,6 @@ This version is a part of Section 35: YelpCamp Adding Authentication
     - Add Edit Route for Campgrounds
     - Add link to edit page
     - Add Update Route
-    - Fix $set problem
-         
+- Deleting Campgrounds
+    - Add Destroy Route
+    - Add Delete button         
