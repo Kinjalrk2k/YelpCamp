@@ -26,7 +26,7 @@ mongoose
   .then(() => console.log("Connected to YelpCamp DB!"))
   .catch((error) => console.log(error.message));
 
-seedDB();
+// seedDB();
 
 // Passport Configurations
 app.use(
