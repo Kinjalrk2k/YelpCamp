@@ -1,7 +1,7 @@
 # YelpCamp
 Colt Steele's YelpCamp project!
 
-This version is a part of Section 35: YelpCamp Adding Authentication
+This version is a part of Section 36: YelpCamp Cleaning up
 
 ## Objectives for this section
 - Users+ Comments
