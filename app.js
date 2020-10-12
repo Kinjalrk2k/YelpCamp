@@ -27,13 +27,6 @@ dotenv.config();
 console.log(typeof process.env.DATABASEURL);
 
 // connecting db
-// mongoose
-//   .connect("mongodb://localhost:27017/yelp_camp", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => console.log("Connected to YelpCamp DB!"))
-//   .catch((error) => console.log(error.message));
 mongoose
   .connect(process.env.DATABASEURL, {
     useNewUrlParser: true,
