@@ -66,7 +66,14 @@ router.put("/:comment_id", function (req, res) {
 
 // DESTROY
 router.delete("/:comment_id", function (req, res) {
-  res.send("del");
+  Comment.findByIdAndRemove(req.params.comment_id, function (err) {
+    if (err) {
+      console.log(err);
+      res.redirect("back");
+    } else {
+      res.redirect("/campgrounds/" + req.params.id);
+    }
+  });
 });
 
 // middleware
