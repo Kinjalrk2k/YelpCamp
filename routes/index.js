@@ -44,6 +44,7 @@ router.post(
 
 router.get("/logout", function (req, res) {
   req.logout();
+  req.flash("error", "logged you out")
   res.redirect("/campgrounds");
 });
 

@@ -49,6 +49,8 @@ passport.deserializeUser(User.deserializeUser());
 // user defined middleware - this makes req.user variable available to all the routes and templates
 app.use(function (req, res, next) {
   res.locals.currentUser = req.user;
+  res.locals.error = req.flash("error");
+  res.locals.success = req.flash("success");
   next();
 });
 
