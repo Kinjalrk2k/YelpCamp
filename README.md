@@ -16,3 +16,10 @@ This version is a part of Section 35: YelpCamp Adding Authentication
     - User can only edit his/her campground
     - User can only delete his/her campground
     - Show/Hide Edit and Delete buttons
+- Editing Comments
+    - Add edit route for comments
+    - Add edit button
+    - Add update route
+- Deleting Comments
+    - Add Destroy route
+    - Add Delete button
