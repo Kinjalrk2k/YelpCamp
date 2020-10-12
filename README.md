@@ -1,7 +1,7 @@
 # YelpCamp
 Colt Steele's YelpCamp project!
 
-This version is a part of Section 35: YelpCamp Adding Authentication
+This version is a part of Section 37: YelpCamp Update and Destroy
 
 ## Objectives for this section
 - Editing Campgroungs
