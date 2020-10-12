@@ -23,3 +23,8 @@ This version is a part of Section 35: YelpCamp Adding Authentication
 - Deleting Comments
     - Add Destroy route
     - Add Delete button
+- Authorization - Comments
+    - User can only edit his/her comment
+    - User can only delete his/her comment
+    - Show/Hide Edit and Delete buttons
+    - Refractor Middleware
